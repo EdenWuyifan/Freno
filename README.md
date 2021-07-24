@@ -13,17 +13,17 @@ We presented both centralized and distributed Freno. Centrailized Freno is base 
 #### Change Configurations
 Before going to the expiriment scripts, we need to set the variables from Freno/config.sh. The details are as follow:
  * **$experiment** is the current experiment: 
-  * "Freno" for MPI Freno; 
-  * "SpFreno" for Spark Freno; 
-  * "IncSpFreno" for incremental Spark Freno; 
-  * "centFreno" for centralized Freno.
+   + "Freno" for MPI Freno; 
+   + "SpFreno" for Spark Freno; 
+   + "IncSpFreno" for incremental Spark Freno; 
+   + "centFreno" for centralized Freno.
  * **$expnum** is how many times we want to run a single experiment (7, 11, 13 is recommended for computing trusted mean value).
  * **$target** is the purpose of the experiments, using "perf" for measuring performances.
  * **$dataset** is the dataset we want to get Frequent Itemset from: 
-  * "retail" is [retail](http://www.philippe-fournier-viger.com/spmf/datasets/retail.txt);
-  * "kosarak" is [kosarak](http://www.philippe-fournier-viger.com/spmf/datasets/kosarak.dat);
-  * "chainstore" is [chainstoreFIM](http://www.philippe-fournier-viger.com/spmf/datasets/chainstoreFIM.txt);
-  * "record" is [RecordLink](http://www.philippe-fournier-viger.com/spmf/datasets/RecordLink.txt).
+   + "retail" is [retail](http://www.philippe-fournier-viger.com/spmf/datasets/retail.txt);
+   + "kosarak" is [kosarak](http://www.philippe-fournier-viger.com/spmf/datasets/kosarak.dat);
+   + "chainstore" is [chainstoreFIM](http://www.philippe-fournier-viger.com/spmf/datasets/chainstoreFIM.txt);
+   + "record" is [RecordLink](http://www.philippe-fournier-viger.com/spmf/datasets/RecordLink.txt).
 
 
 
