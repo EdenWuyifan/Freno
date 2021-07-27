@@ -40,7 +40,14 @@
   MPI version of Freno can be launched under any version of MPI (we are using MPICH2 and MPI4py). We need to install MPICH for cluster building and MPI4py for executing the experiments. 
   Here's a simple tutoral for MPI cluster building: https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/
   
+  After uilding the cluster, we can run bashfiles runperf.sh for performance measurements.
   
 
 
 ### Spark Distributed Freno
+  Spark version of Freno needs a valid Spark cluster and pySpark library. After installing Spark cluster, we need to locate the path of the spark-submit file and the hostname and port of the master node.
+  Go to SpFreno (IncSpFreno for incremental experiments), change the nohup line to:
+    _nohup {$SPARK_BIN_PATH}/spark-submit --py-files archives.zip --master {NAME_OF_MASTER}:{PORT_NUMBER} --conf spark.executorEnv.PYTHONHASHSEED=321 --driver-memory 61g --conf spark.rpc.message.maxSize=1024 --conf spark.driver.maxResultSize=0 --conf spark.default.parallelism=$PARTITION run.py -d $dataset -p $PARTITION_
+    
+  Then launch _bash run.sh_ and check the performance output accordingly.
+    
