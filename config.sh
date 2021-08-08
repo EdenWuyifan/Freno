@@ -5,6 +5,7 @@ HOME="."
 experiment="Freno"
 #experiment="SpFreno"
 #experiment="IncSpFreno"
+#experiment="centFreno"
 
 expnums=7
 #target="result"
