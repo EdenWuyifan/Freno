@@ -37,6 +37,8 @@
 <a name="CentFreno"></a>
 ### Centralised Freno
   Centrailized version of Freno can be performed with on machine with a single thread. 
+  * Change the configurations accordingly to centFreno (See [Change Configurations](#Config) for expirimental settings).
+  * Run _bash run.sh_.
 
 <a name="MPIFreno"></a>
 ### MPI Distributed Freno
@@ -58,3 +60,8 @@
     
   * Then launch _bash run.sh_ and check the performance output accordingly.
     
+### Where to find the results
+You can find the expiriment results in the exp files within each expirement file. For example MPI-Freno-retail-12-workers-performance data can be found in _Freno/exp/performance/retail/12/_.
+
+
+###### Have a good day~
