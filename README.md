@@ -54,7 +54,9 @@
 
 <a name="SpFreno"></a>
 ### Spark Distributed Freno
-  * Spark version of Freno needs a valid Spark cluster and pySpark library. After installing Spark cluster, we need to locate the path of the spark-submit file and the hostname and port of the master node.
+  * Spark version of Freno needs a valid Spark cluster and pySpark library. We are using [Aliyun's Spark-Hadoop cluster setups](https://rosnext.console.aliyun.com/cn-qingdao/samples/Spark_Hadoop_Ecs_Instance_Group).
+  * After setup the Aliyun cluster, run _bash Freno/Prerequisite/FIM-dependencies.sh_ on each machine(both master and workers) to build homogeneous Pyenv.
+  * After installing Spark cluster, we need to locate the path of the spark-submit file and the hostname and port of the master node.
   * Go to SpFreno (IncSpFreno for incremental experiments), change the nohup line to:
     _nohup {$SPARK_BIN_PATH}/spark-submit --py-files archives.zip --master {NAME_OF_MASTER}:{PORT_NUMBER} --conf spark.executorEnv.PYTHONHASHSEED=321 --driver-memory 61g --conf spark.rpc.message.maxSize=1024 --conf spark.driver.maxResultSize=0 --conf spark.default.parallelism=$PARTITION run.py -d $dataset -p $PARTITION_
     
