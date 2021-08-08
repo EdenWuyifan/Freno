@@ -44,7 +44,7 @@
     + Run _bash FIM-dependencies.sh_ to build homogeneous Pyenv.
     + Run _bash mpi.sh_ to build MPI environrment.
   
-  * After uilding the cluster, we can run bashfiles runperf.sh for performance measurements (See [Change Configurations](#### Change Configurations) for expirimental settings).
+  * After uilding the cluster, we can run bashfiles runperf.sh for performance measurements (See [Change Configurations](####Change Configurations) for expirimental settings).
   
 
 
