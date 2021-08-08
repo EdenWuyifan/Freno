@@ -39,8 +39,12 @@
 ### MPI Distributed Freno
   * MPI version of Freno can be launched under any version of MPI (we are using MPICH2 and MPI4py). We need to install MPICH for cluster building and MPI4py for executing the experiments. 
   * Here's a simple tutoral for MPI cluster building: https://mpitutorial.com/tutorials/running-an-mpi-cluster-within-a-lan/
+    + Firstly, we need to construct ssh connection between every machine within the cluster.
+    + Then, go to Freno/Prerequisite on every machine.
+    + Run _bash FIM-dependencies.sh_ to build homogeneous Pyenv.
+    + Run _bash mpi.sh_ to build MPI environrment.
   
-  * After uilding the cluster, we can run bashfiles runperf.sh for performance measurements.
+  * After uilding the cluster, we can run bashfiles runperf.sh for performance measurements (See [Change Configurations](#### Change Configurations) for expirimental settings).
   
 
 
