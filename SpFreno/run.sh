@@ -1,5 +1,6 @@
 source ../config.sh
 
+# !--------------Change the partitions here please!----------------!
 for PARTITION in 4 8 12
 do
 

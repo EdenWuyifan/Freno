@@ -1,8 +1,9 @@
 source ../config.sh
 
-
+# !--------------Change the partitions here please!----------------!
 for PARTITION in 4 8 12
 do
+	# !--------------Change the intervals here please!----------------!
     for INTERVAL in 20000 40000 60000 80000 100000
     do
 

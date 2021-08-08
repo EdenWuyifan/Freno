@@ -8,9 +8,9 @@ experiment="Freno"
 #experiment="centFreno"
 
 expnums=7
-#target="result"
 target="perf"
-#target="scala"
+#target="size"
+#target="mem"
 #partition=4
 
 dataset="retail"
@@ -36,7 +36,6 @@ re="$result/result"
 table="$tablesize/size"
 
 run="$DIR/run.py"
-runresult="$DIR/runresult.py"
 runperf="$DIR/runperf.py"
 runmem="$DIR/runmem.py"
 runsize="$DIR/runsize.py"
